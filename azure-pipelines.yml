@@ -18,7 +18,7 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.SourcesDirectory)/path/to/SSIS New.ispac'
+    targetPath: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'SSISArtifact'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
