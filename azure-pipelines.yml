@@ -16,7 +16,7 @@ steps:
     projectPath: '.'
     stripSensitive: false
     outputPath: '$(Build.ArtifactStagingDirectory)'
-- task: PublishPipelineArtifact@1
+- task: PublishBuildArtifacts@1
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'SSISArtifact'
