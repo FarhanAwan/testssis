@@ -26,11 +26,11 @@ steps:
   inputs:
     sourcePath: '$(Build.ArtifactStagingDirectory)'
     destinationType: 'ssisdb'
-    destinationServer: 'mx01222.database.windows.net'
-    destinationPath: '/SSISDB/AzurePackage'
+    destinationServer: 'DC1B2B01'
+    destinationPath: '/SSISDB/AzurePackageTest'
     authType: 'sql'
-    username: 'farhan'
-    password: 'Manager12'
+    username: 'usrWinIT'
+    password: 'vWw3E88'
     whetherOverwrite: 'yes'
     whetherContinue: 'no'
 
