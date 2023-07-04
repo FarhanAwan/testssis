@@ -18,10 +18,21 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)'
+    targetPath: 
     artifactName: 'SSISArtifact'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: SSISDeploy@1
+  inputs:
+    sourcePath: '$(Build.ArtifactStagingDirectory)/SSISArtifact/'
+    destinationType: 'ssisdb'
+    destinationServer: 'mx01222.database.windows.net'
+    destinationPath: '/SSISDB/AzurePackage'
+    authType: 'sql'
+    username: 'farhan'
+    password: 'Manager12'
+    whetherOverwrite: 'yes'
+    whetherContinue: 'no'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
