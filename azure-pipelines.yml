@@ -28,9 +28,9 @@ steps:
     destinationType: 'ssisdb'
     destinationServer: 'dc1b2b01.reconext.com'
     destinationPath: '/SSISDB/AzurePackageTest'
-    authType: 'sql'
-    username: 'usrWinIT'
-    password: 'vWw3E88'
+    authType: 'win'
+    username: 'reconext\asif-winit_ext'
+    password: 'Ytrewq!2345'
     whetherOverwrite: 'yes'
     whetherContinue: 'no'
 
