@@ -24,7 +24,7 @@ steps:
   displayName: 'Run a one-line script'
 - task: SSISDeploy@1
   inputs:
-    sourcePath: '$(Build.ArtifactStagingDirectory)/SSISArtifact/'
+    sourcePath: '$(Build.ArtifactStagingDirectory)'
     destinationType: 'ssisdb'
     destinationServer: 'mx01222.database.windows.net'
     destinationPath: '/SSISDB/AzurePackage'
