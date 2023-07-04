@@ -26,7 +26,7 @@ steps:
   inputs:
     sourcePath: '$(Build.ArtifactStagingDirectory)'
     destinationType: 'ssisdb'
-    destinationServer: 'DC1B2B01'
+    destinationServer: 'dc1b2b01.reconext.com'
     destinationPath: '/SSISDB/AzurePackageTest'
     authType: 'sql'
     username: 'usrWinIT'
